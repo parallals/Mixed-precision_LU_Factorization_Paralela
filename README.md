@@ -1,6 +1,6 @@
 # Mixed-precision_LU_Factorization_Paralela
 
-Proyecto del ramo Introducción a la Programación Paralela - Universidad de Concepción. Consiste en una implementación del algoritmo Mixed Precision para LU Factorization descrito y basado en el paper "Mixed‑precision pre‑pivoting strategy for the LU factorization" (https://link.springer.com/article/10.1007/s11227-024-06523-w)
+Proyecto del ramo Introducción a la Programación Paralela. Consiste en una implementación del algoritmo Mixed Precision para LU Factorization descrito y basado en el paper "Mixed‑precision pre‑pivoting strategy for the LU factorization" (https://link.springer.com/article/10.1007/s11227-024-06523-w)
 
 ## ¿Como compilar?
 
