@@ -2,7 +2,7 @@
 
 Proyecto del ramo Introducción a la Programación Paralela. Consiste en una implementación del algoritmo Mixed Precision para LU Factorization descrito y basado en el paper "Mixed‑precision pre‑pivoting strategy for the LU factorization" (https://link.springer.com/article/10.1007/s11227-024-06523-w)
 
-## ¿Como compilar?
+## ¿Cómo compilar?
 
 El input para compilar es la siguiente:
 
@@ -12,7 +12,7 @@ El repositorio contiene 3 archivos de código cruciales; MPF.cu, dgetf2_native_n
 
 En arch se específica el poder de computabilidad de la GPU NVIDIA que se ocupará para compilar. En el caso del informe, era de sm_75, pero ahora está en sm=native para que se adapte al que se vaya a ocupar.
 
-## ¿Como ejecutar?
+## ¿Cómo ejecutar?
 
 El programa de benchmark consiste en poder generar y pasarle a los algoritmos (MPF y DGETRF) una o varias matrices, y este nos retorna los tiempos en tanto consola como en un .csv. El input para ejecutar es el siguiente:
 
