@@ -134,7 +134,7 @@ void MPF(double *A, int N, int r, int *IPIV) {
 
 
 
-            // 3.2 Update global IPIV array and prepare indices for LASWP
+            // 3.1 Update global IPIV array and prepare indices for LASWP
             int *h_panel_ipiv = new int[panel_cols];
             cudaMemcpy(h_panel_ipiv, d_IPIV_panel, panel_cols * sizeof(int), cudaMemcpyDeviceToHost);
 
@@ -151,7 +151,7 @@ void MPF(double *A, int N, int r, int *IPIV) {
             cudaMemcpy(d_IPIV_panel, h_panel_ipiv, panel_cols * sizeof(int), cudaMemcpyHostToDevice);
             delete[] h_panel_ipiv;
 
-            // 3.1 Apply permutations to FP64 matrix (kernel)
+            // 3.2 Apply permutations to FP64 matrix (kernel)
             LASWP_kernel << <grid_size(N), __threads_per_block__ >> > (d_A, N, k, panel_cols, d_IPIV_panel);
             cudaDeviceSynchronize();
 
